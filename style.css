@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  font-family: 'Segoe UI', Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255,255,255,0.85);
+  max-width: 400px;
+  margin: 60px auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 40px 30px 30px 30px;
+  text-align: center;
+}
+
+h1 {
+  color: #ff5858;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-shadow: 1px 2px 8px #fff6;
+}
+
+#input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #ffb56b;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  width: 60%;
+  transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+  border: 2px solid #ff5858;
+  outline: none;
+}
+
+.button {
+  background: linear-gradient(90deg, #ffb56b 0%, #ff5858 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px #ffb56b44;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #ff5858 0%, #ffb56b 100%);
+  transform: scale(1.05);
+}
+
+#lives-text {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+#message {
+  margin: 18px 0 10px 0;
+  font-size: 1.2rem;
+  color: #ff5858;
+  min-height: 28px;
+  font-weight: 500;
+  text-shadow: 1px 1px 6px #fff8;
+  display: none;
+}
+
+#score, #attempts {
+  font-size: 1.1rem;
+  color: #ffb56b;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 20px 8px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  input[type="number"] {
+    width: 90%;
+  }
+}
